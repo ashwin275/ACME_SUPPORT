@@ -1,0 +1,17 @@
+.card-signup{
+    border-radius: 30px;
+}
+
+.textsignup{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 400;
+    
+   
+}
+.text-btn{
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    color: #5a5151;
+    text-decoration: underline;
+}
