@@ -1,11 +1,16 @@
 import React, { useState } from 'react'
 import './Login.css'
-import axioInstance from '../Axios/AxiosPublic'
+import axioInstancepublic from '../Axios/AxiosPublic'
 import logoimage from'../../images/signin.gif'
+import {toast} from 'react-toastify'
+import Cookies from 'js-cookie';
+import { useDispatch } from 'react-redux'
+import { setCredentials } from '../Features/Slice'
+import { useNavigate } from 'react-router-dom'
 function Login() {
-
+    const dispatch = useDispatch()
     const [email,SetEmail] = useState(true)
-   
+    const navigate = useNavigate()
     const [formData,setFormData] = useState({
         email:'',
         password:'',
@@ -39,10 +44,28 @@ function Login() {
      
       
       try{
-        const response = await axioInstance.post('users/login/',data)
-        console.log(response)
+        const response = await axioInstancepublic.post('users/login/',data)
+        console.log('badrequst',response)
+        toast.success(response.data.message)
+        console.log(response.data)
+        const userInfo = response.data.payload
+
+        const tokenString = JSON.stringify(response.data.token);
+        Cookies.set('Tokens',tokenString)
+        dispatch(setCredentials({userInfo}))
+
+         navigate('/home')
+
       }catch(error){
-       console.log(error)
+        console.log(error)
+        if(error.response.status == 401){
+            toast.error(error.response.data.detail)
+        }
+        else if(error.response.status == 400){
+            toast.error(error.response.data.error)
+        }
+        
+       
       }
     }
 

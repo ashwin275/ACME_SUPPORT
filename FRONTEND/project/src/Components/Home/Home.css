@@ -1,0 +1,39 @@
+.home-wrapper{
+   
+    border-radius: 40px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+   
+}
+/* 
+.home-inner-wrapper{
+   
+    
+} */
+
+.cards-home{
+    min-width: 600px;
+}
+
+.card-title{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: x-large;
+}
+
+.button{
+    width: 10rem;
+}
+
+.container{
+    display: flex;
+    
+}
+/* .card-wrapper{
+    display: flex;
+    align-items: center;
+    text-align: center;
+} */

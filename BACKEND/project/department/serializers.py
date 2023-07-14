@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from .models import Department
-from django.utils import timezone
-from django.db import IntegrityError
+# from django.utils import timezone
+# from django.db import IntegrityError
 
 
 class DepartmentSerializer(serializers.ModelSerializer):
@@ -19,6 +19,8 @@ class DepartmentSerializer(serializers.ModelSerializer):
     def update(self, instance, validated_data):
         instance = super().update(instance, validated_data)  
         return  instance
+
+
 
     
     

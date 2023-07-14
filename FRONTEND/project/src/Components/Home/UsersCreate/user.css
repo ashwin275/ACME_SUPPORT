@@ -1,0 +1,30 @@
+.container-user{
+    width: 50%;
+    
+    
+}
+
+.container-inner{
+    width: 60%;
+
+
+}
+.container-inner-first{
+    width: 50%;
+    
+}
+.text-title-user{
+ font-family: 'Times New Roman', Times, serif;
+ font-size: x-large;
+}
+
+.container-end{
+    width: 50%;
+}
+.end-text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    font-weight: 600;
+    text-decoration: underline;
+    
+}

@@ -1,0 +1,41 @@
+.container-dpt{
+    width: 80%;
+    min-height: 500px;
+   
+}
+
+.wrapper-dpt{
+ 
+    width: 90%;
+    border-radius: 20px;
+}
+.h1-text{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.wrapper-first{
+    width: 80%;
+}
+.wrapper-second{
+    width: 20%;
+   
+    background-color: rgb(215, 248, 250);
+    border-radius: 30px;
+}
+.text-head-sub{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    color: #060701;
+    font-weight: 500;
+}
+.text-head{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+}
+.modal-title{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.btn-size{
+    width: 7rem;
+}
